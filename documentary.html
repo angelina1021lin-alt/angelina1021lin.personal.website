@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentary | Angelina Hsin-Yu Lin</title>
+<meta name="description" content="Running Out Of Prints: a documentary following our team in Shanghai as we built a portable newsstand to help older adults navigate everyday technology.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23faf9f6'%3EEV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-config.js"></script>
+<script src="assets/site.js" defer></script>
+<style>.chapter-btn.is-active{background:#faf9f6;color:#000}.chapter-btn.is-active span{color:#000 !important}.chapter-btn.is-active span:first-child{color:#4d644e !important}</style>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-surface-variant selection:text-primary" data-page="documentary.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main" class="w-full pt-20 bg-background min-h-screen">
+<div class="flex flex-col w-full">
+<div data-subnav="digital-wellbeing"></div>
+
+<div class="relative w-full overflow-hidden bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pt-12 lg:pt-16 pb-12 flex flex-col gap-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+<div class="lg:col-span-7">
+<h1 class="font-display-lg text-display-lg italic text-surface-bright tracking-tight">Running Out Of Prints</h1>
+</div>
+<div class="lg:col-span-5 pb-2">
+<p class="font-body-md text-body-md text-outline-variant leading-relaxed">This documentary follows our team in Shanghai as we designed and built a portable newsstand to help older adults navigate everyday technology. It records the process from collecting elements and interviewing older adults to launching a community street event.</p>
+</div>
+</div>
+
+<div class="w-full aspect-video rounded bg-inverse-surface overflow-hidden shadow-2xl">
+<video id="docVideo" class="w-full h-full object-contain bg-black" controls playsinline preload="metadata" poster="assets/video/running-out-of-prints-poster.jpg" aria-label="Running Out Of Prints, documentary film">
+<source src="assets/video/running-out-of-prints.mp4" type="video/mp4">
+Your browser does not support embedded video.
+</video>
+</div>
+
+<nav aria-label="Documentary chapters">
+<h2 class="font-body-md text-[11px] uppercase tracking-[0.3em] text-on-primary-container mb-3">Chapters</h2>
+<ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" id="chapterList">
+<li><button type="button" class="chapter-btn w-full text-left px-4 py-4 bg-primary-container hover:bg-on-primary-fixed-variant transition-colors flex flex-col gap-1 border border-transparent is-active" data-start="0" data-end="14" aria-label="Jump to Introduction, starting at 00:00"><span class="font-body-md text-[11px] tracking-[0.2em] text-tertiary-fixed-dim">01 &middot; 00:00 &ndash; 00:14</span><span class="font-display-lg text-lg lg:text-xl text-surface-bright leading-snug">Introduction</span></button></li>
+<li><button type="button" class="chapter-btn w-full text-left px-4 py-4 bg-primary-container hover:bg-on-primary-fixed-variant transition-colors flex flex-col gap-1 border border-transparent" data-start="14" data-end="175" aria-label="Jump to Collection and Interview Process, starting at 00:14"><span class="font-body-md text-[11px] tracking-[0.2em] text-tertiary-fixed-dim">02 &middot; 00:14 &ndash; 02:55</span><span class="font-display-lg text-lg lg:text-xl text-surface-bright leading-snug">Collection &amp; Interview Process</span></button></li>
+<li><button type="button" class="chapter-btn w-full text-left px-4 py-4 bg-primary-container hover:bg-on-primary-fixed-variant transition-colors flex flex-col gap-1 border border-transparent" data-start="175" data-end="199" aria-label="Jump to Assembling Newsstand, starting at 02:55"><span class="font-body-md text-[11px] tracking-[0.2em] text-tertiary-fixed-dim">03 &middot; 02:55 &ndash; 03:19</span><span class="font-display-lg text-lg lg:text-xl text-surface-bright leading-snug">Assembling Newsstand</span></button></li>
+<li><button type="button" class="chapter-btn w-full text-left px-4 py-4 bg-primary-container hover:bg-on-primary-fixed-variant transition-colors flex flex-col gap-1 border border-transparent" data-start="199" data-end="262" aria-label="Jump to Street Event, starting at 03:19"><span class="font-body-md text-[11px] tracking-[0.2em] text-tertiary-fixed-dim">04 &middot; 03:19 &ndash; 04:22</span><span class="font-display-lg text-lg lg:text-xl text-surface-bright leading-snug">Street Event</span></button></li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+
+</main>
+<script>
+(function () {
+  var v = document.getElementById('docVideo'); if (!v) return;
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.chapter-btn'));
+  function mark() {
+    var t = v.currentTime, idx = 0;
+    btns.forEach(function (b, i) { if (t >= parseFloat(b.getAttribute('data-start')) - 0.25) idx = i; });
+    btns.forEach(function (b, i) { b.classList.toggle('is-active', i === idx); if (i === idx) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current'); });
+  }
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      v.currentTime = parseFloat(b.getAttribute('data-start')) + 0.01;
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+      mark();
+    });
+  });
+  v.addEventListener('timeupdate', mark); v.addEventListener('seeked', mark);
+})();
+</script>
+<footer id="site-footer"></footer>
+<noscript><p style="padding:1.5rem;text-align:center;font-size:.8rem">Navigation requires JavaScript: <a href="index.html">Home</a> &middot; <a href="publications.html">Publications</a> &middot; <a href="digital-wellbeing.html">Digital Wellbeing Project</a> &middot; <a href="digital-photography.html">Interests</a></p></noscript>
+</body>
+</html>
